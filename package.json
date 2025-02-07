@@ -1,0 +1,20 @@
+{
+  "name": "lastfm-badge",
+  "version": "1.0.0",
+  "description": "Generate a dynamic badge for the last played song on Last.fm.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "xml2js": "^0.6.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "license": "MIT"
+}
