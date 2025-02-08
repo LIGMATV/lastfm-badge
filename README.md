@@ -25,10 +25,16 @@ Displays the last played song scrobbled on Last.fm for a user.
 
 You can see the configurations in https://github.com/LIGMATV/lastfm-badge/blob/main/index.js#L12-L17, there's also the default values for the configurations.
 
+### `user`
+```
+![](http://lastfm-badge.vercel.app/last-played?user=rj)
+```
+![](http://lastfm-badge.vercel.app/last-played?user=rj)
+
 ### `provider`
 Where the badge will be rendered, lightweight alternatives from Shields.io. (Not support `style` and `icon`.)
 - **Supported values**:
-  - `shields`
+  - `shields` (Default)
   - `badgen`
   - `badgers`
 ```
@@ -41,7 +47,7 @@ Where the badge will be rendered, lightweight alternatives from Shields.io. (Not
 ### `style`
 > Only suppported in `shields` `provider`.
 - **Supported values**:
-  - `flat`
+  - `flat` (Default)
   - `flat-square`
   - `plastic`
   - `for-the-badge`
@@ -70,16 +76,38 @@ Where the badge will be rendered, lightweight alternatives from Shields.io. (Not
 ```
 ![](http://lastfm-badge.vercel.app/last-played?user=rj&icon=google)
 
-## Deploy
+## Building
 
-This is an steps for deploy it to your account with Vercel.
+These are the steps to run it locally or deploy it to Vercel.
 
 1. Get Last.fm API key
    - **You must already signed up and login to LastFM account.**
    - Go to [Create API account page](https://www.last.fm/api/account/create).
    - After fill up some informations (like **Contact email** and **Application name**), click <kbd>Submit</kbd>.
    - Copy the value next to "**API key**". _(The character must be 32.)_
-2. [<img src="https://vercel.com/button" alt="Deploy with Vercel" width="256"/>](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FLIGMATV%2Flastfm-badge&env=API_KEY&envDescription=LastFM%20API%20key.&envLink=https%3A%2F%2Fgithub.com%2FLIGMATV%2Flastfm-badge%2Ftree%2Fmain%3Ftab%3Dreadme-ov-file%23deploy&project-name=lastfm-badge&repository-name=lastfm-badge)
+
+### Local
+
+2. Clone this repository
+```
+git clone https://github.com/LIGMATV/lastfm-badge.git
+cd lastfm-badge
+npm install
+```
+
+3. Create a new file "`.env`" with this content (Replace `XXX...` with your actual API key)
+```
+API_KEY=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+```
+
+3. Start in your terminal
+```
+npm start
+```
+
+### Deploy
+
+2. [<img src="https://vercel.com/button" alt="Deploy with Vercel" width="256"/>](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FLIGMATV%2Flastfm-badge&env=API_KEY&envDescription=LastFM%20API%20key.&envLink=https%3A%2F%2Fgithub.com%2FLIGMATV%2Flastfm-badge%2Ftree%2Fmain%3Ftab%3Dreadme-ov-file%23building&project-name=lastfm-badge&repository-name=lastfm-badge)
 
 ## Limitation
 

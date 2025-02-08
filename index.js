@@ -4,17 +4,17 @@ const xml2js = require("xml2js");
 require("dotenv").config();
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const port = process.env.port || 3000;
 
 app.get("/last-played", async (req, res) => {
   try {
     const {
-      user = process.env.USER || "ligmatv",
-      label = req.query.label || "Last Played",
-      color = req.query.color || "07bbbc",
-      style = req.query.style || "flat",
-      icon = req.query.icon || "lastdotfm",
+      user = process.env.USER || "rj",
       provider = req.query.provider || "shields",
+      style = req.query.style || "flat",
+      color = req.query.color || "red",
+      label = req.query.label || "Last Played",
+      icon = req.query.icon || "lastdotfm",
     } = req.query;
 
     const API_KEY = process.env.API_KEY;
@@ -57,8 +57,8 @@ app.get("/last-played", async (req, res) => {
 });
 
 if (!process.env.VERCEL) {
-  app.listen(PORT, () => {
-    console.log(`Server berjalan di http://localhost:${PORT}`);
+  app.listen(port, () => {
+    console.log(`Server running at http://localhost:${port}`);
   });
 }
 
