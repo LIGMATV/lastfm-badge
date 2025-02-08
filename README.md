@@ -16,9 +16,9 @@ Generate a dynamic badge for the last played song on Last.fm. _Insipired from [a
 Displays the last played song scrobbled on Last.fm for a user.
 
 ```
-![](http://lastfm-badge.vercel.app/last-played?user=rj)
+![](http://lastfm-badge.vercel.app/last-played?user=RJ)
 ```
-![](http://lastfm-badge.vercel.app/last-played?user=rj)
+![](http://lastfm-badge.vercel.app/last-played?user=RJ)
 
 
 ## Configurations
@@ -27,54 +27,54 @@ You can see the configurations in https://github.com/LIGMATV/lastfm-badge/blob/m
 
 ### `user`
 ```
-![](http://lastfm-badge.vercel.app/last-played?user=rj)
+![](http://lastfm-badge.vercel.app/last-played?user=RJ)
 ```
-![](http://lastfm-badge.vercel.app/last-played?user=rj)
+![](http://lastfm-badge.vercel.app/last-played?user=RJ)
 
 ### `provider`
 Where the badge will be rendered, lightweight alternatives from Shields.io. (Not support `style` and `icon`.)
 - **Supported values**:
-  - `shields` (Default)
-  - `badgen`
-  - `badgers`
+  - `shields` (shields.io) **(Default)**
+  - `badgen` (badgen.net)
+  - `badgers` (badgers.space)
 ```
-![](http://lastfm-badge.vercel.app/last-played?user=rj&provider=badgen)  
-![](http://lastfm-badge.vercel.app/last-played?user=rj&provider=badgers)
+![](http://lastfm-badge.vercel.app/last-played?user=RJ&provider=badgen)  
+![](http://lastfm-badge.vercel.app/last-played?user=RJ&provider=badgers)
 ```
-![](http://lastfm-badge.vercel.app/last-played?user=rj&provider=badgen)  
-![](http://lastfm-badge.vercel.app/last-played?user=rj&provider=badgers)
+![](http://lastfm-badge.vercel.app/last-played?user=RJ&provider=badgen)  
+![](http://lastfm-badge.vercel.app/last-played?user=RJ&provider=badgers)
 
 ### `style`
 > Only suppported in `shields` `provider`.
 - **Supported values**:
-  - `flat` (Default)
+  - `flat` **(Default)**
   - `flat-square`
   - `plastic`
   - `for-the-badge`
   - `social`
 ```
-![](http://lastfm-badge.vercel.app/last-played?user=rj&style=social)
+![](http://lastfm-badge.vercel.app/last-played?user=RJ&style=social)
 ```
-![](http://lastfm-badge.vercel.app/last-played?user=rj&style=social)
+![](http://lastfm-badge.vercel.app/last-played?user=RJ&style=social)
 
 ### `color`
 ```
-![](http://lastfm-badge.vercel.app/last-played?user=rj&color=green)
+![](http://lastfm-badge.vercel.app/last-played?user=RJ&color=green)
 ```
-![](http://lastfm-badge.vercel.app/last-played?user=rj&color=green)
+![](http://lastfm-badge.vercel.app/last-played?user=RJ&color=green)
 
 ### `label`
 ```
-![](http://lastfm-badge.vercel.app/last-played?user=rj&label=What%20I%20listening%20now)
+![](http://lastfm-badge.vercel.app/last-played?user=RJ&label=What%20I%20listening%20now)
 ```
-![](http://lastfm-badge.vercel.app/last-played?user=rj&label=What%20I%20listening%20now)
+![](http://lastfm-badge.vercel.app/last-played?user=RJ&label=What%20I%20listening%20now)
 
 ### `icon`
 > Only suppported in `shields` `provider`, until Badgen.net & Badgers supporting Simple Icons.
 ```
-![](http://lastfm-badge.vercel.app/last-played?user=rj&icon=google)
+![](http://lastfm-badge.vercel.app/last-played?user=RJ&icon=google)
 ```
-![](http://lastfm-badge.vercel.app/last-played?user=rj&icon=google)
+![](http://lastfm-badge.vercel.app/last-played?user=RJ&icon=google)
 
 ## Building
 
